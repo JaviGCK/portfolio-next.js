@@ -13,6 +13,22 @@ export const transitionVariantsPage = {
   },
 };
 
+export const transitionVariants2Page = {
+  initial: {
+    x: "0%",
+    width: "0%",
+  },
+  animate: {
+    x: "100%",
+    width: "100%",
+  },
+  exit: {
+    x: ["100%", "0%"],
+    width: ["100%", "0%"],
+  },
+};
+
+
 export const motionTransitionsAbout = {
   initial: {
     opacity: 0,
