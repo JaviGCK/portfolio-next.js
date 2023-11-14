@@ -9,7 +9,7 @@ function Transition() {
             <AnimatePresence mode="wait">
                 <div>
                     <motion.div
-                        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#0f0239]"
+                        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#000000]"
                         variants={transitionVariantsPage}
                         initial="initial"
                         animate="animate"
@@ -18,7 +18,7 @@ function Transition() {
                     >
                     </motion.div>
                     <motion.div
-                        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#4b3792] opacity-50"
+                        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#525253] opacity-50"
                         variants={transitionVariantsPage}
                         initial="initial"
                         animate="animate"

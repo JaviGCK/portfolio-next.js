@@ -1,9 +1,13 @@
+import Transition from '@/components/Transition/Transition'
 import React from 'react'
 
 
 const AboutPage = () => {
     return (
-        <div>AboutPage</div>
+        <>
+            <div>AboutPage</div>
+            <Transition />
+        </>
     )
 }
 

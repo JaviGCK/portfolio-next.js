@@ -2,6 +2,7 @@ import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Prosto_One } from 'next/font/google'
+import { Header } from '@/components/Header'
 
 
 const prosto = Prosto_One({ subsets: ['latin'], weight: "400" })
@@ -19,6 +20,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={prosto.className}>
+
+        <Header />
         <Navbar />
 
         {children}

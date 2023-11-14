@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 body {
-  background: #1f1934;
+  background: linear-gradient(90deg, rgba(47, 47, 47, 1) 0%, rgba(5, 5, 5, 1) 65%, rgba(47, 47, 47, 1) 100%);
   color: #fff;
 }
 
 ::selection {
-  background-color: rgba(74, 47, 189, 0.5);
+  background-color: #2c3e50;
 }
 
 #cover {
-  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  background: linear-gradient(90deg, rgba(47, 47, 47, 1) 0%, rgba(5, 5, 5, 1) 65%, rgba(47, 47, 47, 1) 100%);
   display: flex;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -20,8 +20,8 @@ body {
 }
 
 .currentIconPage svg {
-  stroke: #1c9bf5;
-  fill: #3d1cf5;
+  stroke: #1f1934;
+  fill: #1f1934;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
