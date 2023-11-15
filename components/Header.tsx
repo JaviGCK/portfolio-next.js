@@ -11,8 +11,9 @@ export function Header() {
             <motion.div variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit="hidden">
                 <div className="container justify-between mx-auto md:flex">
 
-                    <h1 className="my-3 text-4xl text-center text-white md:text-lef">Javi
-                        <span className="text-secondary">Dev</span>
+                    <h1 className="my-4 text-4xl text-center text-white md:text-lef px-5">Javi
+                        <span className="text-secondary">Code</span>
+                        <span className="text-secondary">Art</span>
                     </h1>
 
 

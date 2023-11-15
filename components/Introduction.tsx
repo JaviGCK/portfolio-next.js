@@ -16,7 +16,8 @@ export function Introduction() {
                         <Image src="/assets/hombre1.jpg" priority width="800" height="600" alt="Avatar" />
                     </motion.div>
 
-                    <motion.div variants={fadeIn("left", 0.5)}
+                    <motion.div className="w-auto h-auto mx-auto md:block px-10"
+                        variants={fadeIn("left", 0.5)}
                         initial="hidden"
                         animate="show"
                         exit="hidden"
