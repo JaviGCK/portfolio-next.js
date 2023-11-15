@@ -18,7 +18,7 @@ export function Navbar() {
                     <div key={name}>
                         <Link href={path} className={`${path === pathName && 'currentIconPage'} group transition-all duration-300`}>
                             <div className="absolute right-0 hidden mr-20 rounded-sm md:group-hover:flex md:group-hover:items-center text-black">
-                                <div className="relative flex items-center p-2 leading-none text-black capitalize bg-slate-200 rounded-sm">
+                                <div className="relative flex items-center p-2 leading-none text-black capitalize bg-rose-100 rounded-sm">
                                     {name}
                                 </div>
                                 <div className="absolute border-l-8 border-r-0 border-solid border-l-white border-y-transparent border-y-4 -right-2" />

@@ -1,8 +1,12 @@
+import { Work } from '@/components/Work'
 import React from 'react'
 
 const WorksPage = () => {
     return (
-        <div>WorksPage</div>
+        <>
+            <div>WorksPage</div>
+            <Work />
+        </>
     )
 }
 
