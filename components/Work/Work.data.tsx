@@ -6,7 +6,7 @@ export const cardContent = [
     title: "Calculator",
     description:
       "Calculator project made by JavaScrip CSS. ",
-    imageUrl: "/Javi1-1-removebg-preview.png",
+    imageUrl: "/calculator.jpeg",
     skills: [
       {
         icon: <SiReact size="40" />

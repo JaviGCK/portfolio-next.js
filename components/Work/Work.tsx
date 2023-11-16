@@ -23,11 +23,11 @@ export function Work() {
     const cardVariants: any = {
         expanded: {
             width: '500px',
-            height: '700px',
+            height: '600px',
             opacity: 1,
             zIndex: 2,
             position: 'fixed',
-            top: '40%',
+            top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
         },
@@ -41,6 +41,7 @@ export function Work() {
             transform: 'none',
         },
     };
+
 
     return (
         <div className="h-screen relative">
@@ -75,6 +76,7 @@ export function Work() {
                                 onAnimationComplete={handleCardAnimationComplete}
                                 style={{
                                     backgroundImage: `url(/assets/${imageUrl})`,
+                                    backgroundSize: 'cover',
                                     pointerEvents: expandedIndex !== null && expandedIndex !== id ? 'none' : 'auto',
                                 }}
                             >
