@@ -47,7 +47,7 @@ export function About() {
                     <motion.div
                         key={item.id}
                         className={`${selectedIndex === index ? 'text-secondary duration-300 transition-all border-secondary' : 'border-white'} 
-                          cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3`}
+                          cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3 hover:shadow-xl hover:shadow-white/50`}
                         onClick={() => handleItemClick(index)}
                     >
                         {window.innerWidth > 768 ? (
