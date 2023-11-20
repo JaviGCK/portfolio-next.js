@@ -1,8 +1,16 @@
-export const dataAboutSkills = [
+export interface AboutDataItem {
+  id: number;
+  title: string;
+  content: {
+    title: React.ReactNode;
+  }[];
+}
+
+export const dataAbout: AboutDataItem[] = [
   {
     id: 0,
-    text: "Sobre mi",
-    skills: [
+    title: "Sobre mi",
+    content: [
       {
         title: (
           <div>
@@ -20,15 +28,14 @@ export const dataAboutSkills = [
             <p className='mb-6'>Así que, bienvenido a mi rincón del internet, donde la pasión por el desarrollo y la relajada camaradería se encuentran.</p>
           </div>
         ),
-        date: "",
       },
     ],
   },
 
   {
     id: 1,
-    text: "Skills",
-    skills: [
+    title: "Skills",
+    content: [
       {
         title: (
           <div>
@@ -43,15 +50,14 @@ export const dataAboutSkills = [
             </ul>
           </div>
         ),
-        date: "",
       },
     ],
   },
 
   {
     id: 2,
-    text: "Tecnologias",
-    skills: [
+    title: "Tecnologias",
+    content: [
       {
         title: (
           <div>
@@ -72,14 +78,13 @@ export const dataAboutSkills = [
             </p>
           </div>
         ),
-        date: "",
       },
     ],
   },
   {
     id: 4,
-    text: 'Experiencia',
-    skills: [
+    title: 'Experiencia',
+    content: [
       {
         title: (
           <div>
@@ -110,8 +115,8 @@ export const dataAboutSkills = [
 
   {
     id: 5,
-    text: 'Estudios',
-    skills: [
+    title: 'Estudios',
+    content: [
       {
         title: (
           <div>

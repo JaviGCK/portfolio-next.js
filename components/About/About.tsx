@@ -1,15 +1,23 @@
 'use client'
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { BiLeftArrow, BiUpArrow } from 'react-icons/bi';
 import { motionTransitionsAbout } from '@/app/utils/motionTransitions';
-import { dataAboutSkills } from './About.data';
+import { dataAbout } from './About.data';
+import { BiUser, BiCog, BiCodeAlt, BiBriefcase, BiBook } from 'react-icons/bi';
+
+const sectionIcons = [BiUser, BiCog, BiCodeAlt, BiBriefcase, BiBook];
+
+// ... (imports)
+
+// ... (imports)
 
 export function About() {
-    const [index, setIndex] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState(0);
 
-    const handleItemClick = (itemIndex: any) => {
-        setIndex(itemIndex);
+    const handleItemClick = (index: any) => {
+        setSelectedIndex(index);
     };
 
     return (
@@ -21,31 +29,42 @@ export function About() {
             >
                 <motion.div
                     className="w-3/4 mx-auto mt-36 bg-secondary/20 rounded-xl"
-                    key={index}
+                    key={selectedIndex}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 3 }}
                     style={{ maxHeight: '60vh', overflowY: 'auto' }}
                 >
-                    {dataAboutSkills[index].skills[0].title}
+                    {dataAbout[selectedIndex].content.map((item, index) => (
+                        <div key={index}>{item.title}</div>
+                    ))}
                 </motion.div>
             </motion.div>
 
             <motion.div
-                className="flex flex-col mt-10 md:flex-row justify-evenly md:mt-8 md:mb-5 fixed bottom-0 left-0 right-0"
+                className="flex flex-row mt-10 md:flex-row justify-evenly md:mt-8 md:mb-28 fixed bottom-20 left-0 right-0 w-4/5 mx-auto"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
             >
-                {dataAboutSkills.map((dataText, itemIndex) => (
+                {dataAbout.map((item, index) => (
                     <motion.div
-                        key={dataText.id}
-                        className={`${index === itemIndex ? 'text-secondary duration-300 transition-all border-secondary' : 'border-white'} 
+                        key={item.id}
+                        className={`${selectedIndex === index ? 'text-secondary duration-300 transition-all border-secondary' : 'border-white'} 
                           cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3`}
-                        onClick={() => handleItemClick(itemIndex)}
+                        onClick={() => handleItemClick(index)}
                     >
-                        <p className="mr-4 text-md md:text-lg">{dataText.text}</p>
-                        {index === itemIndex ? <BiUpArrow /> : <BiLeftArrow />}
+                        {window.innerWidth > 768 ? (
+                            <>
+                                <p className="mr-4 text-md md:text-lg">{item.title}</p>
+                                {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
+                            </>
+                        ) : (
+                            <div className="flex items-center">
+                                {sectionIcons[index] && React.createElement(sectionIcons[index], { size: 20 })}
+                                {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
+                            </div>
+                        )}
                     </motion.div>
                 ))}
             </motion.div>

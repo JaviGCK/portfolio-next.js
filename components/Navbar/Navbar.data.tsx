@@ -18,11 +18,6 @@ export const dataNavbar = [
     icon: <RiBriefcase2Line size="30" />,
   },
   {
-    name: "services",
-    path: "/services",
-    icon: <RiServerLine size="30" />,
-  },
-  {
     name: "testimonials",
     path: "/testimonials",
     icon: <RiChatPollLine size="30" />,
