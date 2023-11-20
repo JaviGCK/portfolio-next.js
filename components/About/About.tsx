@@ -9,10 +9,6 @@ import { BiUser, BiCog, BiCodeAlt, BiBriefcase, BiBook } from 'react-icons/bi';
 
 const sectionIcons = [BiUser, BiCog, BiCodeAlt, BiBriefcase, BiBook];
 
-// ... (imports)
-
-// ... (imports)
-
 export function About() {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -42,7 +38,7 @@ export function About() {
             </motion.div>
 
             <motion.div
-                className="flex flex-row mt-10 md:flex-row justify-evenly md:mt-8 md:mb-28 fixed bottom-20 left-0 right-0 w-4/5 mx-auto"
+                className={`flex flex-row mt-10 md:flex-row justify-evenly md:mt-8 fixed bottom-0 left-0 right-0 w-4/5 mx-auto mb-24 md:mb-0`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
@@ -71,3 +67,4 @@ export function About() {
         </div>
     );
 }
+
