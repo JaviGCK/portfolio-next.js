@@ -30,7 +30,7 @@ export function Introduction() {
                     </motion.div>
 
                     <motion.div
-                        className="w-auto h-auto mx-auto md:block px-10"
+                        className="w-auto h-auto mx-auto md:block"
                         variants={fadeIn('left', 0.5)}
                         initial="hidden"
                         animate="show"
@@ -40,11 +40,11 @@ export function Introduction() {
 
                             <div className="flex flex-col items-start w-auto gap-5 mb-10 px-10 text-lg">
                                 <a href="tel:+34663033843" className="flex items-center text-secondary mb-2">
-                                    <FaPhone size={16} className="mr-2" />
+                                    <FaPhone size={16} className="mr-2 text-yellow-500" />
                                     +34 663 033 843
                                 </a>
                                 <a href="mailto:javigcpgr@gmail.com" className="flex items-center text-secondary mb-2">
-                                    <FaEnvelope size={16} className="mr-2" />
+                                    <FaEnvelope size={16} className="mr-2 text-yellow-500" />
                                     javigcpgr@gmail.com
                                 </a>
                                 <a
@@ -53,7 +53,7 @@ export function Introduction() {
                                     rel="noopener noreferrer"
                                     className="flex items-center text-secondary mb-2"
                                 >
-                                    <FaLinkedin size={16} className="mr-2" />
+                                    <FaLinkedin size={16} className="mr-2 text-yellow-500" />
                                     LinkedIn
                                 </a>
                                 <a
@@ -62,7 +62,7 @@ export function Introduction() {
                                     rel="noopener noreferrer"
                                     className="flex items-center text-secondary"
                                 >
-                                    <FaGithub size={16} className="mr-2" />
+                                    <FaGithub size={16} className="mr-2 text-yellow-500" />
                                     GitHub
                                 </a>
                             </div>
