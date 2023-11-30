@@ -14,7 +14,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="mt-6 mb-6 md:text-3xl">Un poquito sobre mi</h2>
+            <h2 className="text-3xl mt-6 mb-4">Un poquito <span className="text-yellow-500">Sobre Mi</span></h2>
             <p>
               Hola, soy un apasionado desarrollador frontend que siempre está buscando emocionantes desafíos para desatar soluciones creativas y eficientes. Me encanta sumergirme en el mundo del desarrollo web, explorando nuevas ideas y mejorando constantemente mis habilidades.
             </p>
@@ -39,7 +39,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Soft Skills</h2>
+            <h2 className="text-3xl mt-6 mb-4">Soft <span className="text-yellow-500">Skills</span></h2>
             <ul>
               <li className="mt-8">Compromiso elevado - Capacidad para comprometerse plenamente con las tareas y metas.</li>
               <li className="mt-8">Comunicación efectiva - Habilidad para comunicarse de manera clara y eficiente.</li>
@@ -61,7 +61,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Tecnologias</h2>
+            <h2 className="text-3xl mt-6 mb-4 text-yellow-500">Tecnologias</h2>
             <h2 className="text-2xl mb-4 mt-10">Languages & Frameworks</h2>
             <p>
               HTML, CSS, Bootstrap, Styled Components, JavaScript, TypeScript, Node.js, React, Next.js, Express, Mongoose.
@@ -88,7 +88,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="mt-6 mb-6 md:text-3xl">Experiencia Profesional</h2>
+            <h2 className="text-3xl mt-6 mb-4">Experiencia <span className="text-yellow-500">Profesional</span></h2>
             <p>
               Como desarrollador FullStack en el Instituto de Tecnología durante el año 2023, lideré y participé en diversos proyectos, destacando en particular mi experiencia con la tecnología MERN (MongoDB, Express.js, React, Node.js).
             </p>
@@ -96,9 +96,9 @@ export const dataAbout: AboutDataItem[] = [
             <p className='mb-6'>Entre los proyectos más destacados se encuentran:</p>
 
             <ul className="list-disc ml-8 mb-6">
-              <li>Apollofy - Plataforma para escuchar, compartir y subir música, con características de seguimiento de usuarios. Proyecto de desarrollo completo utilizando tecnologías como React, TypeScript, Auth0, Cloudinary, MongoDB y PostgresSQL.</li>
-              <li>Movies Hub - Aplicación web para realizar un seguimiento de películas, con funcionalidades completas de creación, actualización, eliminación y calificación de películas. Otro proyecto de desarrollo fullstack utilizando diversas tecnologías, incluidas React, Vite, Typescript, Auth0, Cloudinary, MongoDB y PostgresSQL.</li>
-              <li>Ecommerce - Aplicación web que simula un ecommerce. (Detalles adicionales)</li>
+              <li className="mb-4">Apollofy - Plataforma para escuchar, compartir y subir música, con características de seguimiento de usuarios. Proyecto de desarrollo completo utilizando tecnologías como React, TypeScript, Auth0, Cloudinary, MongoDB y PostgresSQL.</li>
+              <li className="mb-4">Movies Hub - Aplicación web para realizar un seguimiento de películas, con funcionalidades completas de creación, actualización, eliminación y calificación de películas. Otro proyecto de desarrollo fullstack utilizando diversas tecnologías, incluidas React, Vite, Typescript, Auth0, Cloudinary, MongoDB y PostgresSQL.</li>
+              <li className="mb-4">Ecommerce - Aplicación web que simula un ecommerce. (Detalles adicionales)</li>
             </ul>
 
             <h2 className="mt-6 mb-6 md:text-3xl">Logistics and Shipping Manager en Woodenland (2018-2022)</h2>
@@ -120,7 +120,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Master en Desarrollo de Software</h2>
+            <h2 className="text-3xl mt-6 mb-4">Master en <span className="text-yellow-500">Desarrollo de Sofware</span></h2>
             <p className='mb-6'>
               Obtuve mi Master en Desarrollo de Software en el Instituto de Tecnología, donde participé en un programa intensivo que involucró más de 1200 horas de experiencia en un entorno de trabajo real. Durante este período, me sumergí en el desarrollo de software, aplicando mis conocimientos en un entorno ágil y trabajando en una variedad de proyectos desafiantes.
             </p>

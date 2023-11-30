@@ -52,7 +52,7 @@ export function Work() {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="mt-28 mb-12 text-2xl text-center md:text-4-xl"
+                        className="mt-28 mb-12 text-3xl text-center md:text-4-xl"
                     >
                         Mis últimos <span className="text-secondary text-yellow-500">trabajos</span><span className='text-secondary'> realizados.</span>
                     </motion.h1>
@@ -81,7 +81,7 @@ export function Work() {
                                 }}
                             >
                                 <div className="flex flex-col justify-end h-full">
-                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-gray-100 min-h-[100px] flex flex-col items-center justify-center p-3">
+                                    <div className="card-footer rounded-b-[20px] bg-gray-100 min-h-[100px] flex flex-col items-center justify-center p-3">
                                         <h2 className="text-xl font-semibold text-center text-black">{title}</h2>
                                         {id === expandedIndex && (
                                             <>
