@@ -54,7 +54,7 @@ export function Work() {
                         exit="hidden"
                         className="mt-28 mb-12 text-2xl text-center md:text-4-xl"
                     >
-                        Mis últimos <span className="text-secondary">trabajos realizados.</span>
+                        Mis últimos <span className="text-secondary text-yellow-500">trabajos</span><span className='text-secondary'> realizados.</span>
                     </motion.h1>
                     <motion.div
                         className={`flex flex-col items-center h-full gap-10 px-2 md:flex-row md:grid md:grid-cols-4 ${isAnyCardExpanded ? 'grid-expanded' : ''}`}
@@ -81,12 +81,12 @@ export function Work() {
                                 }}
                             >
                                 <div className="flex flex-col justify-end h-full">
-                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-rose-200 min-h-[100px] flex flex-col items-center justify-center p-3">
-                                        <h2 className="text-xl font-semibold text-center text-white">{title}</h2>
+                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-gray-100 min-h-[100px] flex flex-col items-center justify-center p-3">
+                                        <h2 className="text-xl font-semibold text-center text-black">{title}</h2>
                                         {id === expandedIndex && (
                                             <>
-                                                <p>{description}</p>
-                                                <div className="flex gap-5 mt-3">
+                                                <p className='text-black'>{description}</p>
+                                                <div className="flex gap-5 mt-3 text-black">
                                                     {skills.map((data, index) => (
                                                         <p key={index}>{data.icon}</p>
                                                     ))}

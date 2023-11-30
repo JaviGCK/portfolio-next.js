@@ -12,8 +12,8 @@ export function Introduction() {
     };
 
     return (
-        <div className="bg-[#131424]/60 w-full z-10">
-            <div className="w-full h-full bg-gradient-to-r from-[#131424]/10 via-black/30 to-black/10">
+        <div className="w-full z-10">
+            <div className="w-full h-full">
                 <div className="container grid items-center h-full px-5 mx-auto md:grid-cols-2 md:text-left">
                     <motion.div
                         className="hidden w-auto h-auto mx-auto mt-28 md:block"
@@ -22,7 +22,11 @@ export function Introduction() {
                         animate="show"
                         exit="hidden"
                     >
-                        <Image src="/assets/javiport.jpeg" priority width="450" height="100" alt="img-javi" />
+                        <Image
+                            src="/assets/javiport.jpeg"
+                            priority width="450" height="100"
+                            alt="img-javi"
+                            style={{ borderRadius: '15px', border: '5px solid #F1f1f1' }} />
                     </motion.div>
 
                     <motion.div
@@ -65,26 +69,28 @@ export function Introduction() {
 
                         ) : (
 
-                            <div>
+                            <div className='md:pr-20'>
+
                                 <h1 className="text-4xl leading-tight md:mb-6">
-                                    Si puedes pensarlo, <br />
-                                    <span className="text-secondary">puedes programarlo</span>
+                                    Creando en
+                                    <span className="text-secondary text-yellow-500"> Bits</span>
                                 </h1>
-                                <p className="max-w-sm mb-6 text-xl md:max-w-2xl md:mx-0 md:mb-12 md:text-xl">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero dolor, aliquam eu
-                                    interdum sed, dignissim placerat nulla.
+                                <p className="w-full mb-6 text-xl md:max-w-2xl md:mx-0 md:mb-12 md:text-xl"
+                                >
+                                    Como desarrollador web, cada proyecto es una fusión de creatividad y precisión, donde mi código se convierte en la firma distintiva. Explora conmigo la arquitectura digital, donde la originalidad y la funcionalidad convergen, y cada sitio cuenta su propia historia en este inmenso universo en línea.
                                 </p>
                             </div>
                         )}
 
 
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-center md:pr-20">
                             <button
                                 onClick={handleContactButtonClick}
-                                className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-white/50"
+                                className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-yellow-500 rounded-xl hover:bg-yellow-500 hover:border-yellow-500 hover:shadow-md"
                             >
                                 {showContactInfo ? 'Volver atrás' : 'Contáctame'}
                             </button>
+
                         </div>
                     </motion.div>
                 </div>

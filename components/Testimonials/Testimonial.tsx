@@ -14,7 +14,7 @@ export function Testimonial() {
                     exit="hidden"
                     className="my-5 text-3xl text-center md:my-10"
                 >
-                    Personas con las que he trabajado.
+                    <span className='text-yellow-500'>Personas</span> con las que he <span className='text-yellow-500'>trabajado.</span>
                 </motion.h1>
                 <motion.div
                     variants={fadeIn('up', 0.5)}

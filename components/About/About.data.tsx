@@ -39,7 +39,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mb-4">Soft Skills</h2>
+            <h2 className="text-3xl mt-6 mb-4">Soft Skills</h2>
             <ul>
               <li className="mt-8">Compromiso elevado - Capacidad para comprometerse plenamente con las tareas y metas.</li>
               <li className="mt-8">Comunicación efectiva - Habilidad para comunicarse de manera clara y eficiente.</li>
@@ -61,7 +61,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mb-4">Tecnologias</h2>
+            <h2 className="text-3xl mt-6 mb-4">Tecnologias</h2>
             <h2 className="text-2xl mb-4 mt-10">Languages & Frameworks</h2>
             <p>
               HTML, CSS, Bootstrap, Styled Components, JavaScript, TypeScript, Node.js, React, Next.js, Express, Mongoose.
@@ -120,7 +120,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mb-4">Master en Desarrollo de Software</h2>
+            <h2 className="text-3xl mt-6 mb-4">Master en Desarrollo de Software</h2>
             <p className='mb-6'>
               Obtuve mi Master en Desarrollo de Software en el Instituto de Tecnología, donde participé en un programa intensivo que involucró más de 1200 horas de experiencia en un entorno de trabajo real. Durante este período, me sumergí en el desarrollo de software, aplicando mis conocimientos en un entorno ágil y trabajando en una variedad de proyectos desafiantes.
             </p>
