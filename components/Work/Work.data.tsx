@@ -164,4 +164,42 @@ export const cardContent = [
     ],
     link: "https://calculator-assembler.vercel.app/",
   },
+  {
+    id: 6,
+    title: "SW",
+    version: <FaDesktop size={30} />,
+    description:
+      "Adéntrate en el emocionante mundo de ShoppingWizzard, mi proyecto que simula una tienda de cómics en línea, donde la magia de la compra se combina con la fascinación de los cómics. Desarrollado con JavaScript y CSS, este proyecto va más allá de una simple exhibición de productos, ofreciendo una experiencia completa de compra en línea.",
+    imageUrl: "/shoppingwizzard.png",
+    skills: [
+      {
+        icon: <SiJavascript size={40} />,
+        name: "Javascript",
+      },
+      {
+        icon: <SiCss3 size={40} />,
+        name: "CSS",
+      },
+    ],
+    link: "https://shopping-wizzard.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Calendar",
+    version: <DiResponsive size={30} />,
+    description:
+      "Explora la versatilidad de mi proyecto de calendario creado con JavaScript y CSS, que te brinda la experiencia de gestionar tu tiempo de manera eficiente y personalizada. Inspirado en la funcionalidad intuitiva de Google Calendar, este calendario te permite organizar tu día a día con facilidad. Con una interfaz limpia y amigable, puedes añadir eventos, establecer recordatorios y personalizar cada día según tus necesidades.",
+    imageUrl: "/calendar.png",
+    skills: [
+      {
+        icon: <SiJavascript size={40} />,
+        name: "Javascript",
+      },
+      {
+        icon: <SiCss3 size={40} />,
+        name: "CSS",
+      },
+    ],
+    link: "https://ts-calendar-ruby.vercel.app/",
+  },
 ]
