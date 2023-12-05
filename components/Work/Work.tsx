@@ -42,7 +42,6 @@ export function Work() {
         },
     };
 
-
     return (
         <div className="h-screen relative">
             <div className="grid pb-32 md:min-h-screen mt-28 md:mt-0 place-items-center">
@@ -63,7 +62,7 @@ export function Work() {
                         animate="show"
                         exit="hidden"
                     >
-                        {cardContent.map(({ id, title, imageUrl, description, skills }) => (
+                        {cardContent.map(({ id, title, imageUrl, description, skills, link, version }) => (
                             <motion.div
                                 key={id}
                                 className={`card cursor-pointer h-[400px] bg-auto bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex ? 'expanded' : ''}`}
@@ -77,20 +76,32 @@ export function Work() {
                                 style={{
                                     backgroundImage: `url(/assets/${imageUrl})`,
                                     backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
                                     pointerEvents: expandedIndex !== null && expandedIndex !== id ? 'none' : 'auto',
                                 }}
                             >
                                 <div className="flex flex-col justify-end h-full">
                                     <div className="card-footer rounded-b-[20px] bg-gray-100 min-h-[100px] flex flex-col items-center justify-center p-3">
-                                        <h2 className="text-xl font-semibold text-center text-black">{title}</h2>
+                                        <div className='flex'>
+                                            <h2 className="text-xl font-semibold text-center text-black px-5">{title}</h2>
+                                            <div className='text-black'>{version}</div>
+                                        </div>
                                         {id === expandedIndex && (
                                             <>
-                                                <p className='text-black'>{description}</p>
-                                                <div className="flex gap-5 mt-3 text-black">
+                                                <p className='text-black mt-8'>{description}</p>
+                                                <div className="flex gap-10 mt-10 text-black">
                                                     {skills.map((data, index) => (
                                                         <p key={index}>{data.icon}</p>
                                                     ))}
                                                 </div>
+                                                {link && (
+                                                    <a className='text-yellow-500 mt-8' href={link} target="_blank" rel="noopener noreferrer">
+                                                        Visitar el proyecto
+                                                    </a>
+
+                                                )}
+
                                             </>
                                         )}
                                     </div>
