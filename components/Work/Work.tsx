@@ -65,7 +65,8 @@ export function Work() {
                         {cardContent.map(({ id, title, imageUrl, description, skills, link, version }) => (
                             <motion.div
                                 key={id}
-                                className={`card cursor-pointer h-[400px] bg-auto bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex ? 'expanded' : ''}`}
+                                className={`card cursor-pointer h-[400px] bg-auto bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex ? 'expanded max-w-[95%] max-h-[90%]' : ''}`}
+
                                 initial={{ opacity: 1 }}
                                 variants={cardVariants}
                                 animate={id === expandedIndex ? 'expanded' : 'collapsed'}
@@ -83,13 +84,15 @@ export function Work() {
                             >
                                 <div className="flex flex-col justify-end h-full">
                                     <div className="card-footer rounded-b-[20px] bg-gray-100 min-h-[100px] flex flex-col items-center justify-center p-3">
-                                        <div className='flex'>
+                                        <div className='flex flex-col items-center'>
                                             <h2 className="text-xl font-semibold text-center text-black px-5">{title}</h2>
-                                            <div className='text-black'>{version}</div>
+                                            <div className='text-black mt-2'>{version}</div>
                                         </div>
+
                                         {id === expandedIndex && (
                                             <>
-                                                <p className='text-black mt-8'>{description}</p>
+                                                <p className='text-black mt-8'>
+                                                    {description}</p>
                                                 <div className="flex gap-10 mt-10 text-black">
                                                     {skills.map((data, index) => (
                                                         <p key={index}>{data.icon}</p>

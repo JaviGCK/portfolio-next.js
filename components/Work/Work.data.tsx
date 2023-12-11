@@ -1,4 +1,5 @@
 import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs, SiTestinglibrary, SiMongodb, SiCss3, SiPostgresql, SiNodedotjs, SiExpress, SiPhonepe, SiTypescript, SiBootstrap, SiPostman, SiJavascript } from "react-icons/si";
+import { PiDevicesBold } from "react-icons/pi";
 import { FaDesktop, FaMobileAlt } from "react-icons/fa";
 import { DiResponsive } from "react-icons/di";
 export const cardContent = [
@@ -98,7 +99,7 @@ export const cardContent = [
   {
     id: 3,
     title: "Rick&Morty",
-    version: <DiResponsive size={30} />,
+    version: <PiDevicesBold size={40} />,
     description:
       "Bienvenido a Rick y Morty Explorer, un proyecto emocionante desarrollado con TypeScript, npm y Bootstrap. Esta aplicación te sumerge en el fascinante universo de la serie animada Rick & Morty, permitiéndote explorar detalles fascinantes sobre cada episodio y personaje.",
     imageUrl: "/r&m.png",
@@ -186,7 +187,7 @@ export const cardContent = [
   {
     id: 7,
     title: "Calendar",
-    version: <DiResponsive size={30} />,
+    version: <PiDevicesBold size={40} />,
     description:
       "Explora la versatilidad de mi proyecto de calendario creado con JavaScript y CSS, que te brinda la experiencia de gestionar tu tiempo de manera eficiente y personalizada. Inspirado en la funcionalidad intuitiva de Google Calendar, este calendario te permite organizar tu día a día con facilidad. Con una interfaz limpia y amigable, puedes añadir eventos, establecer recordatorios y personalizar cada día según tus necesidades.",
     imageUrl: "/calendar.png",

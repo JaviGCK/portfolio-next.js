@@ -23,10 +23,10 @@ export function Introduction() {
                         exit="hidden"
                     >
                         <Image
-                            src="/assets/javiport.jpeg"
+                            src="/assets/javip-modified.jpg"
                             priority width="450" height="100"
                             alt="img-javi"
-                            style={{ borderRadius: '15px', border: '5px solid #F1f1f1' }} />
+                            style={{ borderRadius: '15px', border: '5px solid #FFD700' }} />
                     </motion.div>
 
                     <motion.div

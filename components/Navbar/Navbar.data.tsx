@@ -32,9 +32,4 @@ export const dataNavbar = [
     path: "https://github.com/JaviGCK",
     icon: <RiGithubLine size="30" />,
   },
-  {
-    name: "languages",
-    path: "",
-    icon: <LiaLanguageSolid size="30" />,
-  },
 ];

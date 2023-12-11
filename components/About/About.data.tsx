@@ -89,6 +89,7 @@ export const dataAbout: AboutDataItem[] = [
         title: (
           <div>
             <h2 className="text-3xl mt-6 mb-4">Experiencia <span className="text-yellow-500">Profesional</span></h2>
+            <h2 className="mt-6 mb-6 md:text-3xl">FullStack Developer Assembler Institute of Technology (2023)</h2>
             <p>
               Como desarrollador FullStack en el Instituto de Tecnología durante el año 2023, lideré y participé en diversos proyectos, destacando en particular mi experiencia con la tecnología MERN (MongoDB, Express.js, React, Node.js).
             </p>
