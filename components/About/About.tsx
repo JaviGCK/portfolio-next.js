@@ -1,7 +1,6 @@
 'use client'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { BiLeftArrow, BiUpArrow } from 'react-icons/bi';
 import { motionTransitionsAbout } from '@/app/utils/motionTransitions';
 import { dataAbout } from './About.data';
@@ -11,6 +10,12 @@ const sectionIcons = [BiUser, BiCog, BiCodeAlt, BiBriefcase, BiBook];
 
 export function About() {
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        // Verificar si estamos en el entorno del navegador
+        setIsClient(true);
+    }, []);
 
     const handleItemClick = (index: any) => {
         setSelectedIndex(index);
@@ -31,7 +36,7 @@ export function About() {
                     transition={{ duration: 3 }}
                     style={{ maxHeight: '60vh', overflowY: 'auto' }}
                 >
-                    {dataAbout[selectedIndex].content.map((item, index) => (
+                    {isClient && dataAbout[selectedIndex].content.map((item, index) => (
                         <div key={index}>{item.title}</div>
                     ))}
                 </motion.div>
@@ -47,19 +52,23 @@ export function About() {
                     <motion.div
                         key={item.id}
                         className={`border-${selectedIndex === index ? 'gray-300' : 'yellow-500'} text-secondary duration-300 transition-all 
-  cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3 hover:bg-yellow-500`}
+                        cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3 hover:bg-yellow-500`}
                         onClick={() => handleItemClick(index)}
                     >
-                        {window.innerWidth > 768 ? (
+                        {isClient && (
                             <>
-                                <p className="mr-4 text-md md:text-lg">{item.title}</p>
-                                {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
+                                {window.innerWidth > 768 ? (
+                                    <>
+                                        <p className="mr-4 text-md md:text-lg">{item.title}</p>
+                                        {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
+                                    </>
+                                ) : (
+                                    <div className="flex items-center">
+                                        {sectionIcons[index] && React.createElement(sectionIcons[index], { size: 20 })}
+                                        {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
+                                    </div>
+                                )}
                             </>
-                        ) : (
-                            <div className="flex items-center">
-                                {sectionIcons[index] && React.createElement(sectionIcons[index], { size: 20 })}
-                                {selectedIndex === index ? <BiUpArrow size={12} /> : <BiLeftArrow size={12} />}
-                            </div>
                         )}
                     </motion.div>
                 ))}
@@ -67,4 +76,3 @@ export function About() {
         </div>
     );
 }
-
