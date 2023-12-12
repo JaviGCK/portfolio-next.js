@@ -6,7 +6,7 @@ import { fadeIn } from '@/app/utils/motionTransitions'
 export function Testimonial() {
     return (
         <div className='h-screen mt-8' >
-            <div className="flex flex-col justify-center min-h-screen md: px-5 md: t-2">
+            <div className="flex flex-col justify-center min-h-screen md: px-5 md: t-2 md: mt-24 md:overflow-y-auto">
                 <motion.h1
                     variants={fadeIn('up', 0.5)}
                     initial="hidden"
