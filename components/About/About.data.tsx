@@ -14,9 +14,9 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Un poquito <span className="text-yellow-500">Sobre Mi</span></h2>
+            <h2 className="text-3xl mt-2 mb-4">Un poquito <span className="text-yellow-500">Sobre Mí</span></h2>
             <p>
-              Hola, soy un apasionado desarrollador frontend que siempre está buscando emocionantes desafíos para desatar soluciones creativas y eficientes. Me encanta sumergirme en el mundo del desarrollo web, explorando nuevas ideas y mejorando constantemente mis habilidades.
+              Soy un apasionado desarrollador fullstack que siempre está buscando emocionantes desafíos para desatar soluciones creativas y eficientes. Me encanta sumergirme en el mundo del desarrollo web, explorando nuevas ideas y mejorando constantemente mis habilidades.
             </p>
 
             <p className='mb-6'> La gestión de equipos y la comunicación abierta son partes emocionantes de mi viaje. Para mí, cada línea de código cuenta una historia, una historia de dedicación y aprendizaje autodidacta.</p>
@@ -39,7 +39,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Soft <span className="text-yellow-500">Skills</span></h2>
+            <h2 className="text-3xl mt-2 mb-4">Soft <span className="text-yellow-500">Skills</span></h2>
             <ul>
               <li className="mt-8">Compromiso elevado - Capacidad para comprometerse plenamente con las tareas y metas.</li>
               <li className="mt-8">Comunicación efectiva - Habilidad para comunicarse de manera clara y eficiente.</li>
@@ -61,7 +61,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4 text-yellow-500">Tecnologias</h2>
+            <h2 className="text-3xl mt-2 mb-4 text-yellow-500">Tecnologias</h2>
             <h2 className="text-2xl mb-4 mt-10">Languages & Frameworks</h2>
             <p>
               HTML, CSS, Bootstrap, Styled Components, JavaScript, TypeScript, Node.js, React, Next.js, Express, Mongoose.
@@ -88,7 +88,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Experiencia <span className="text-yellow-500">Profesional</span></h2>
+            <h2 className="text-3xl mt-2 mb-4">Experiencia <span className="text-yellow-500">Profesional</span></h2>
             <h2 className="mt-6 mb-6 md:text-3xl">FullStack Developer Assembler Institute of Technology (2023)</h2>
             <p>
               Como desarrollador FullStack en el Instituto de Tecnología durante el año 2023, lideré y participé en diversos proyectos, destacando en particular mi experiencia con la tecnología MERN (MongoDB, Express.js, React, Node.js).
@@ -121,7 +121,7 @@ export const dataAbout: AboutDataItem[] = [
       {
         title: (
           <div>
-            <h2 className="text-3xl mt-6 mb-4">Master en <span className="text-yellow-500">Desarrollo de Sofware</span></h2>
+            <h2 className="text-3xl mt-2 mb-4">Master en <span className="text-yellow-500">Desarrollo de Sofware</span></h2>
             <p className='mb-6'>
               Obtuve mi Master en Desarrollo de Software en el Instituto de Tecnología, donde participé en un programa intensivo que involucró más de 1200 horas de experiencia en un entorno de trabajo real. Durante este período, me sumergí en el desarrollo de software, aplicando mis conocimientos en un entorno ágil y trabajando en una variedad de proyectos desafiantes.
             </p>

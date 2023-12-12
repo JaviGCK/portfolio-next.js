@@ -13,7 +13,7 @@ export function About() {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-        // Verificar si estamos en el entorno del navegador
+
         setIsClient(true);
     }, []);
 
@@ -34,7 +34,7 @@ export function About() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 3 }}
-                    style={{ maxHeight: '48vh', overflowY: 'auto' }}
+                    style={{ maxHeight: '52vh', overflowY: 'auto' }}
                 >
                     {isClient && dataAbout[selectedIndex].content.map((item, index) => (
                         <div key={index}>{item.title}</div>
