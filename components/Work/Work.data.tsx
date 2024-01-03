@@ -203,4 +203,27 @@ export const cardContent = [
     ],
     link: "https://ts-calendar-ruby.vercel.app/",
   },
+  {
+    id: 8,
+    title: "Drag-Drop-Demon",
+    version: <PiDevicesBold size={40} />,
+    description:
+      "Este proyecto de React utiliza react-beautiful-dnd para permitir a los usuarios arrastrar y soltar personajes de la serie Demon Slayer entre diferentes columnas. La aplicación es completamente receptiva, lo que la hace adecuada para su uso en varios dispositivos.",
+    imageUrl: "/destok.png",
+    skills: [
+      {
+        icon: <SiReact size={40} />,
+        name: "Javascript",
+      },
+      {
+        icon: <SiTypescript size={40} />,
+        name: "CSS",
+      },
+      {
+        icon: <SiCss3 size={40} />,
+        name: "CSS",
+      },
+    ],
+    link: "https://glittering-capybara-a60804.netlify.app/",
+  },
 ]
